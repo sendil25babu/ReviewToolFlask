@@ -1,0 +1,12 @@
+1. You inherit an eval suite that's been green for three months, but users say quality dropped. Walk me through how you'd determine whether the model drifted or the eval itself went stale — and how you'd build the suite so it can't quietly rot.
+He explained how to determine whether model drift or stale evaluations caused quality issues and how to maintain a reliable eval suite.
+2. Where does LLM-as-a-judge break down, and how would you calibrate it to evaluate outputs for an AI application (i.e. retirement grades)? When the judge and a human subject-matter expert disagree, what happens?
+He discussed the limitations of LLM-as-a-judge, calibration methods, and resolving disagreements with human subject-matter experts.
+3. Describe a fitness function that fails a build when a capability crosses a tenant-isolation boundary or trains on tenant data. What signal do you actually assert in CI, and how do you avoid both false passes and flaky failures?
+He explained a fitness function for tenant isolation, CI validation signals, and preventing false passes and flaky failures.
+4. Spend doubled last month with flat traffic. How is your attribution built so you can localize it to a tenant, capability, model tier, or a prompt or retrieval change within the hour — and what's the difference between cost-per-call and cost-per-resolved-task?
+He discussed attribution for AI spending, cost localization, and the difference between cost-per-call and cost-per-resolved-task.
+5. Define "rollback" for an LLM capability that depends on a provider-hosted model, a prompt version, a retrieval index, and an eval threshold. What do you pin, and how do you revert cleanly — including when the provider updates the model under you?
+He explained rollback strategies for LLM capabilities, including version pinning and recovery from provider model updates.
+6. Please explain in detail a personal or professional project that you built recently. What was the problem and how did you solve for it using AI?
+He explained a recent personal or professional project, including the problem addressed and how AI was used to solve it.

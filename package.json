@@ -1,0 +1,15 @@
+{
+    "name": "review-tool-frontend",
+    "version": "1.0.0",
+    "description": "Frontend TypeScript for review tool",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "build:esbuild": "esbuild src/static/form-handler.ts --bundle --outfile=src/static/form-handler.js",
+        "watch:esbuild": "esbuild src/static/form-handler.ts --bundle --outfile=src/static/form-handler.js --watch"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0",
+        "esbuild": "^0.19.0"
+    }
+}

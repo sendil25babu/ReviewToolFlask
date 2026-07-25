@@ -1,0 +1,29 @@
+1. Walk me through the last thing you shipped that a non-teammate used. What specifically changed for them after it went live?
+Response: He can better explain about the last thing he shipped that was used by someone outside his team and the impact it created.
+
+2. Tell me about a time you were wrong about something technical in front of a stakeholder. What happened after?
+Response: He can better explain about a time he was wrong about something technical in front of a stakeholder and what happened afterward.
+
+3. Walk me through the most technically complex thing you've built in the last year — what it was, what you built it with, and where AI tools helped versus where you chose not to use them.
+Response: He can better explain about the most technically complex thing he built in the last year and how AI tools were used during the process.
+
+4. Tell me about a time you had to work with a dataset to answer a business question. What did you do, what did you find, how did you communicate it, and what decisions did it influence?
+Response: He can better explain about a time that he worked with a dataset to answer a business question.
+
+5. Tell me about a time you shipped with meaningfully incomplete information — missing data, unclear requirements, or real stakeholder disagreement. How did you decide what was okay not to know?
+Response: He can better explain about a time he shipped with incomplete information and how he determined what information was necessary before proceeding.
+
+6. Tell me about the last time a senior stakeholder asked you to build something you thought was wrong. What did you do after you made your case?
+Response: He can better explain about a time a senior stakeholder requested something he disagreed with and how he handled the situation.
+
+7. Tell me about something you built that you eventually transitioned to another team or person. What did you do to make sure it held up after you were no longer the primary owner?
+Response: He can better explain about something he built and later transitioned to another team or individual, including how he ensured continuity.
+
+8. Tell me about the last time you had to build in a domain where you were clearly the least experienced person in the room. How did you get up to speed fast enough to be useful?
+Response: He can better explain about a time he worked in a domain where he had limited experience and how he became productive.
+
+9. Tell me about a time you recommended against a technical approach — a platform, framework, or architecture — that you were personally skilled in. What made it the wrong choice for that problem?
+Response: He can better explain about a time he recommended against a technical approach and what made it the wrong choice for the problem.
+
+10. Walk me through an analysis you ran that changed how you or a stakeholder understood a problem. What did you actually look at, what surprised you, and how did you decide to trust the result? Was the data fully trustworthy — and if not, what did you validate, accept, and document?
+Response: He can better explain about an analysis he performed that changed the understanding of a problem and how he validated the results.

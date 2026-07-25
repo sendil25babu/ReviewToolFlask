@@ -1,0 +1,9 @@
+# Project dependencies
+Flask==3.0.0
+Werkzeug==3.0.0
+
+# Note: TypeScript compilation requires Node.js and npm
+# Install globally: npm install -g typescript
+# Or locally: npm install typescript
+# Build with: npm run build or npx tsc
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: min(900px, 95vw);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .status {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .status-message {
+            margin-top: 20px;
+            padding: 12px 16px;
+            border-radius: 5px;
+            display: none;
+            font-weight: 500;
+            text-align: left;
+            white-space: pre-line;
+        }
+
+        .status-message.success {
+            background: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #a5d6a7;
+            display: block;
+        }
+
+        .status-message.error {
+            background: #ffebee;
+            color: #c62828;
+            border: 1px solid #ef9a9a;
+            display: block;
+        }
+
+        .form-container {
+            margin-top: 30px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .form-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .form-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        input[type="text"],
+        select {
+            padding: 10px 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .radio-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-options {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .radio-options label {
+            margin: 0;
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+
+        input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+
+        .checkbox-group label {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Review Tool!</h1>
+        <div class="status">Application is running successfully</div>
+        <div id="form-status" class="status-message" aria-live="polite"></div>
+
+        <form class="form-container">
+            <div class="form-columns">
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="interviewId">Interview ID:</label>
+                        <input type="text" id="interviewId" name="interviewId" placeholder="Enter interview ID"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="topic">Select Topic:</label>
+                        <select id="topic" name="topic" required>
+                            <option value="">-- Choose a topic --</option>
+                            <option value="AgenticOperationsProductLead">AgenticOperationsProductLead</option>
+                            <option value="AI-Principal-Voya">AI-Principal-Voya</option>
+                            <option value="AIAssurance">AIAssurance</option>
+                            <option value="AIProductManager">AIProductManager</option>
+                            <option value="AISecurityEngineer">AISecurityEngineer</option>
+                            <option value="FDEPharma">FDEPharma</option>
+                            <option value="ProductBuilder">ProductBuilder</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-column">
+                    <div class="radio-group">
+                        <label>Gender:</label>
+                        <div class="radio-options">
+                            <label for="genderMale">
+                                <input type="radio" id="genderMale" name="gender" checked value="Male" required>
+                                Male
+                            </label>
+                            <label for="genderFemale">
+                                <input type="radio" id="genderFemale" name="gender" value="Female" required>
+                                Female
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="skipTranscript" name="skipTranscript">
+                        <label for="skipTranscript">Skip transcript generation</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="generateSummary" name="generateSummary">
+                        <label for="generateSummary">Generate Summary</label>
+                    </div>
+
+                    <div class="form-group" id="improvementQuestionsGroup" style="display: none;">
+                        <label for="improvementQuestions">Improvement Question Numbers:</label>
+                        <input type="text" id="improvementQuestions" name="improvementQuestions"
+                            placeholder="Enter question numbers (e.g., 1,2,3)">
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="analyzeTranscript" name="analyzeTranscript">
+                        <label for="analyzeTranscript">AnalyzeTranscript</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" style="margin-top: 24px;">Submit</button>
+            <div id="form-status" class="status-message" aria-live="polite"></div>
+        </form>
+    </div>
+
+    <script src="/static/form-handler.js"></script>
+</body>
+
+</html>
