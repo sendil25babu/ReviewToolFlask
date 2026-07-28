@@ -17,6 +17,44 @@ interface ApiResponse {
   data?: FormData;
 }
 
+interface TopicsResponse {
+  topics?: string[];
+}
+
+async function loadTopics(): Promise<void> {
+  const topicSelect = document.getElementById('topic') as HTMLSelectElement | null;
+  if (!topicSelect) {
+    return;
+  }
+
+  const fallbackOptions = Array.from(topicSelect.options)
+    .map((option) => ({ value: option.value, label: option.textContent || '' }))
+    .filter((option) => option.value);
+
+  topicSelect.innerHTML = '';
+  topicSelect.add(new Option('-- Choose a topic --', ''));
+
+  try {
+    const response = await fetch('/api/topics');
+    if (!response.ok) {
+      throw new Error('Failed to fetch topics');
+    }
+
+    const data: TopicsResponse = await response.json();
+    const topics = Array.isArray(data.topics) ? data.topics : [];
+
+    for (const topic of topics) {
+      topicSelect.add(new Option(topic, topic));
+    }
+  } catch (error) {
+    console.error('Unable to load topics from API:', error);
+
+    for (const option of fallbackOptions) {
+      topicSelect.add(new Option(option.label, option.value));
+    }
+  }
+}
+
 /**
  * Initialize form event listeners
  */
@@ -26,6 +64,8 @@ function initializeFormHandler(): void {
     console.error('Form not found');
     return;
   }
+
+  void loadTopics();
 
   form.addEventListener('submit', handleFormSubmit);
 

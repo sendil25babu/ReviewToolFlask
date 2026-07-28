@@ -8,7 +8,8 @@ from utilities.fileOperation import create_docx_file
 def generateInterviewSummary(summary_request):
     interviewId = summary_request.get("interviewId", "")
     topicName = summary_request.get("topicName", "")
-    incorrect_question_input = summary_request.get("incorrect_question_input", "")
+    incorrect_question_input = summary_request.get(
+        "incorrect_question_input", "")
     gender = summary_request.get("gender", "")
 
     yes_file = DATA_PATH / f"{topicName}-YesResponse.txt"
@@ -49,9 +50,8 @@ def generateInterviewSummary(summary_request):
 
     if isinstance(gender, str) and gender.strip().lower() == "female":
         final_summary = apply_female_pronouns(final_summary)
-    
 
-    filename = f"interview_{interviewId}.docx"
+    filename = f"interviewId_{interviewId}.docx"
     output_dir = REVIEW_FOLDER_PATH / interviewId
     output_file = output_dir / filename
 

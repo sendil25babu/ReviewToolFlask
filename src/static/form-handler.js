@@ -32,6 +32,48 @@ function initializeFormHandler() {
         generateSummaryCheckbox.addEventListener('change', updateImprovementQuestionState);
         updateImprovementQuestionState();
     }
+
+    loadTopics();
+}
+
+/**
+ * Load topics from API and populate topic dropdown.
+ */
+async function loadTopics() {
+    const topicSelect = document.getElementById('topic');
+    if (!topicSelect) {
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/topics');
+        if (!response.ok) {
+            throw new Error(`Failed to load topics: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const topics = Array.isArray(data.topics) ? data.topics : [];
+
+        if (!topics.length) {
+            return;
+        }
+
+        topicSelect.innerHTML = '';
+
+        const placeholderOption = document.createElement('option');
+        placeholderOption.value = '';
+        placeholderOption.textContent = '-- Choose a topic --';
+        topicSelect.appendChild(placeholderOption);
+
+        topics.forEach(function (topic) {
+            const option = document.createElement('option');
+            option.value = topic;
+            option.textContent = topic;
+            topicSelect.appendChild(option);
+        });
+    } catch (error) {
+        console.error('Error loading topics:', error);
+    }
 }
 
 /**

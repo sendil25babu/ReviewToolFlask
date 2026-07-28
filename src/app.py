@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-# from constants.topics import TOPICS
+from constants.topics import TOPICS
 from agents.GenerateSummary import generateInterviewSummary
 from agents.ProcessTranscript import processTranscript
 
@@ -13,10 +13,10 @@ def hello_world():
     return render_template('index.html')
 
 
-# @app.route('/api/topics')
-# def get_topics():
-#     """API endpoint to get available topics."""
-#     return jsonify({'topics': TOPICS})
+@app.route('/api/topics')
+def get_topics():
+    """API endpoint to get available topics."""
+    return jsonify({'topics': TOPICS})
 
 
 @app.route('/submit', methods=['POST', 'OPTIONS'])
