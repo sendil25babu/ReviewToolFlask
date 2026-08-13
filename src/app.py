@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 from constants.topics import TOPICS
 from agents.GenerateSummary import generateInterviewSummary
-from agents.ProcessTranscript import processTranscript
+from agents.InterviewEvaluator import generate_review
 
 app = Flask(__name__, template_folder='templates',
             static_folder='static', static_url_path='/static')
@@ -33,7 +33,6 @@ def submit_form():
 
         interview_id = data.get('interviewId')
         topicName = data.get('topic')
-        skip_transcript = data.get('skipTranscript', False)
         generate_summary = data.get('generateSummary', False)
         analyze_transcript = data.get('analyzeTranscript', False)
         incorrect_question_input = data.get('improvementQuestions', '')
@@ -55,7 +54,7 @@ def submit_form():
                 'results': str(output_file) if generate_summary else None,
             }), 200
         if analyze_transcript:
-            transcript_summary = processTranscript(skip_transcript, topicName)
+            transcript_summary = generate_review(data)
             return jsonify({
                 'results': transcript_summary
             }), 200

@@ -1,0 +1,18 @@
+1. If you were building a production AI system such as a claims auto-adjudication platform or advisor copilot, walk through how you would approach the architecture end-to-end. Please discuss areas such as data flow, model integration, orchestration, APIs/services, scalability, and where you believe the system would be most likely to fail first.
+He can better explain how he would design a production AI system end-to-end, including architecture, scalability, integrations, and potential failure points.
+2. AI systems evolve over time as data changes, business requirements shift, and new edge cases emerge. How would you approach monitoring, maintaining, and improving a production AI system over time? Please include how you would think about model drift, evaluation, retraining, observability, or operational monitoring.
+He can better explain how he would monitor, maintain, and improve a production AI system, including model drift, retraining, evaluation, and observability.
+3. In a large-scale production environment, engineering teams often need to balance trade-offs between model accuracy, latency, reliability, and infrastructure cost. Walk through how you would evaluate and make these trade-offs when designing or scaling an AI-enabled platform.
+He can better explain how he evaluates trade-offs between accuracy, latency, reliability, and infrastructure cost when scaling AI platforms.
+4. Before releasing an AI-powered system into production, how would you validate that the platform is ready for launch? After deployment, what metrics, signals, or behaviors would you monitor to determine whether the system is performing successfully or experiencing issues?
+He can better explain how he validates an AI-powered system before launch and monitors its performance after deployment.
+5. Describe a situation where a system or platform you worked on behaved differently than expected due to scale, user behavior, data quality, or operational complexity. What assumptions changed, what challenges emerged, and how did you or the team adapt the architecture or approach?
+He can better explain a situation where a system behaved differently than expected and how the architecture or approach was adapted.
+6. Gen AI is a new, rapidly evolving discipline; how do you go about keeping up with Gen AI trends and what new practices and frameworks do you desire to learn and apply?
+He can better explain how he stays current with Gen AI trends and the practices and frameworks he intends to learn and apply.
+7. Please describe the industries (eg Finance, Healthcare, etc) and domains you have the most experience with. If you have worked in multiple industries, how did you go about adjusting to a new domain and the regulations associated?
+He can better explain his experience across industries and domains, including how he adapted to new regulatory and business environments.
+8. If I dropped you into our environment (Wealth, EB, AI-native), what would you build first—and what would you deliberately ignore?
+He can better explain what he would prioritize building in an AI-native environment and the areas he would intentionally deprioritize.
+9. Please explain in detail a personal or professional project that you built recently. What was the problem and how did you solve for it using AI?
+He can better explain a recent project he built, including the problem, solution approach, and how AI was used.

@@ -1,0 +1,12 @@
+1. Walk me through the last full feature you shipped, hour by hour, with Cursor/Claude/Codex open. What did the AI actually write, where did you stop it or throw its output away, and what would have shipped broken if you'd trusted it blindly?
+He explained the last full feature shipped using AI tools, including code generation, validation, and risks.
+2. Pick something you built end-to-end largely on your own. What was the problem, what did you deliberately cut to ship, and what was the actual timeline from idea to in-use?
+He discussed something built end-to-end, including the problem, tradeoffs made, and delivery timeline.
+3. Tell me about the most recent slice where you personally touched the React/UI, the API, and the data layer. Walk me through each layer. What was hard at each one?
+He explained a recent implementation across the React/UI, API, and data layers, including key challenges.
+4. Describe a data pipeline you built on Databricks (PySpark/Delta) or AWS (S3/Lambda/Glue/Redshift). What was the volume, what transforms, how did non-engineers consume the output, and what broke in production?
+He discussed a data pipeline built on Databricks or AWS, including transformations, consumption, and production issues.
+5. Take one agent you built. How did you handle tool use / function calling, manage context across turns, deal with the model being non-deterministic, and actually evaluate whether it was correct? Where would MCP fit?
+He explained an agent built with tool use, context management, non-determinism handling, evaluation, and MCP considerations.
+6. Tell me about a build-vs-buy or architecture call you made alone and were accountable for. Separately, a time you deleted or simplified something instead of adding to it.
+He discussed a build-vs-buy architecture decision and a time he simplified a solution instead of adding complexity.

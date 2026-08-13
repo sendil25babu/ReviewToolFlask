@@ -1,0 +1,14 @@
+1. Tell me about the last product you led or owned that used generative AI. What was your role, who did you partner with, and how did you know it was working?
+He explained the last generative AI product he led or owned, including his role, key partnerships, and how success was measured.
+2. Tell me about an automation or AI initiative you led where you had to show leadership the value or impact was real. What did you measure, and how did you tell that story?
+He discussed an automation or AI initiative he led, including how he measured its value and communicated its impact to leadership.
+3. Tell me about an AI or automation product you helped take from pilot to production. How did you decide it was ready to go live, and who had to sign off?
+He explained how he helped take an AI or automation product from pilot to production, including launch readiness and stakeholder approvals.
+4. Tell me about the last time you led product work in a domain where you were the least experienced person in the room. You were not the person writing code. How did you become useful to operations and engineering? What did you learn about how decisions actually get made in that domain, not just the vocabulary?
+He discussed leading product work in an unfamiliar domain and collaborating with operations and engineering to support decision-making.
+5. Tell me about a time you partnered with frontline operations staff on a product decision. What did they change about your plan?
+He explained a time he partnered with frontline operations staff and how their input influenced a product decision.
+6. Tell me about a time you were wrong about a product or delivery decision in front of a stakeholder. What did you do afterward?
+He discussed a time he was wrong about a product or delivery decision and the actions he took afterward.
+7. Tell me about a time as product owner or program lead when you recommended not pursuing an automation or AI initiative. What made you stop, and how did you bring stakeholders along?
+He explained a time he recommended not pursuing an automation or AI initiative and how he aligned stakeholders with the decision.

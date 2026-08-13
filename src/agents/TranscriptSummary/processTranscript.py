@@ -22,12 +22,16 @@ from agents.TranscriptSummary.retrieve_chunks import (
     generate_embedding as generate_query_embedding,
 )
 from agents.TranscriptSummary.review_answers import review_retrieved_answers
+from constants.paths import DATA_PATH
 
 
-def _extract_questions(source_file, output_questions_file):
+def _extract_questions(interview_topic):
     """Extract question lines from a source file into one-question-per-line text format."""
-    source_path = Path(source_file)
-    output_path = Path(output_questions_file)
+
+    topicFilePath = DATA_PATH / f"{interview_topic}-YesResponse.txt"
+    source_path = Path(topicFilePath)
+    output_path = Path(topicFilePath).with_name(
+        f"{interview_topic}-questions.txt")
 
     lines = source_path.read_text(encoding="utf-8").splitlines()
     questions = []
@@ -51,7 +55,7 @@ def _extract_questions(source_file, output_questions_file):
     deduped_questions = list(dict.fromkeys(questions))
 
     if not deduped_questions:
-        raise ValueError(f"No questions found in: {source_file}")
+        raise ValueError(f"No questions found in: {source_path}")
 
     output_path.write_text("\n".join(deduped_questions), encoding="utf-8")
     return deduped_questions
@@ -137,7 +141,7 @@ def _retrieve_relevant_chunks(questions_file, chunks_file, embeddings_file, retr
 
 def process_transcript_workflow(
     transcript_file,
-    questions_source_file,
+    topic_name,
     output_dir,
     cleaned_transcript_file="transcript_clean.txt",
     chunks_file="transcript_chunks.json",
@@ -158,7 +162,7 @@ def process_transcript_workflow(
     review_path = output_path / review_file
 
     print("Step 1/6: Cleaning transcript")
-    clean_transcript(transcript_file, str(cleaned_path))
+    cleaned_path = clean_transcript(transcript_file)
 
     print("Step 2/6: Chunking transcript")
     chunk_json = _chunk_transcript(str(cleaned_path), str(chunks_path))
@@ -168,7 +172,8 @@ def process_transcript_workflow(
         str(chunks_path), str(embeddings_path))
 
     print("Step 4/6: Preparing questions and retrieving relevant chunks")
-    questions = _extract_questions(questions_source_file, str(questions_path))
+    questions = _extract_questions(topic_name)
+
     retrieval_results = _retrieve_relevant_chunks(
         str(questions_path),
         str(chunks_path),
@@ -196,37 +201,33 @@ def process_transcript_workflow(
     }
 
 
-def _build_arg_parser():
-    parser = argparse.ArgumentParser(
-        description="Run transcript processing workflow end-to-end."
-    )
-    parser.add_argument("--transcript", required=True,
-                        help="Path to transcript text file")
-    parser.add_argument(
-        "--questions-source",
-        required=True,
-        help="Path to source file containing interview questions",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default=".",
-        help="Directory where workflow output files are generated",
-    )
-    return parser
+# def _build_arg_parser():
+#     parser = argparse.ArgumentParser(
+#         description="Run transcript processing workflow end-to-end."
+#     )
+#     parser.add_argument("--transcript", required=True,
+#                         help="Path to transcript text file")
+#     parser.add_argument(
+#         "--questions-source",
+#         required=True,
+#         help="Path to source file containing interview questions",
+#     )
+#     parser.add_argument(
+#         "--output-dir",
+#         default=".",
+#         help="Directory where workflow output files are generated",
+#     )
+#     return parser
 
 
-def main():
-    args = _build_arg_parser().parse_args()
+# def main():
+#     args = _build_arg_parser().parse_args()
 
-    result = process_transcript_workflow(
-        transcript_file=args.transcript,
-        questions_source_file=args.questions_source,
-        output_dir=args.output_dir,
-    )
+#     result = process_transcript_workflow(
+#         transcript_file=args.transcript,
+#         questions_source_file=args.questions_source,
+#         output_dir=args.output_dir,
+#     )
 
-    print("Workflow complete.")
-    print(json.dumps(result, indent=2, ensure_ascii=False))
-
-
-if __name__ == "__main__":
-    main()
+#     print("Workflow complete.")
+#     print(json.dumps(result, indent=2, ensure_ascii=False))

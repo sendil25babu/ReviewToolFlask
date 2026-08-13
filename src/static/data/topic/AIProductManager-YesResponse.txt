@@ -1,0 +1,22 @@
+1. If you were building an AI-powered workflow assistant for business users, how would you structure the experience and ensure the AI helps guide decisions without fully replacing human judgment?
+He explained how to structure an AI-powered workflow assistant that guides business users while preserving human judgment.
+2. AI systems do not always behave consistently in production. How would you approach situations where the AI gives incomplete, inconsistent, or incorrect outputs? What changes would you consider across the product experience, workflows, or model behavior?
+He discussed handling incomplete, inconsistent, or incorrect AI outputs through changes to the product experience, workflows, and model behavior.
+3. When building AI-enabled products at scale, teams often need to balance speed, model quality, user experience, and infrastructure cost. How would you think through these trade-offs in a real production environment?
+He explained how to balance speed, model quality, user experience, and infrastructure cost when building AI-enabled products at scale.
+4. How would you determine whether an AI-powered feature or workflow is actually delivering value to users or the business? What metrics, signals, or behaviors would you monitor after launch?
+He discussed determining whether an AI-powered feature delivers value using metrics, signals, and user behaviors after launch.
+5. Tell us about a time when a product, workflow, or technical approach had to change because the AI or underlying system did not perform as expected. What did you learn, and how did you adapt?
+He explained a time when a product, workflow, or technical approach changed because the AI or underlying system did not perform as expected.
+6. If you joined an AI-native organization operating in a complex business environment, what types of problems or opportunities would you focus on first, and what areas would you intentionally avoid or deprioritize early on? Why?
+He discussed the problems and opportunities he would prioritize in an AI-native organization and the areas he would intentionally deprioritize.
+7. Gen AI is a new, rapidly evolving discipline; how do you go about keeping up with Gen AI trends and what new practices and frameworks do you desire to learn and apply?
+He explained how he keeps up with Gen AI trends and the practices and frameworks he wants to learn and apply.
+8. Please describe the industries (eg Finance, Healthcare, etc) and domains you have the most experience with. If you have worked in multiple industries, how did you go about adjusting to a new domain and the regulations associated?
+He discussed his experience across industries and domains, including how he adjusted to new domains and regulatory requirements.
+9. Please explain in detail a personal or professional project that you built recently. What was the problem and how did you solve for it using AI?
+He explained a recent personal or professional project, including the problem and how AI was used to solve it.
+10. Tell me about a time you killed or pivoted an AI feature because the value wasn’t there. Who did you have to convince, and how?
+He discussed a time he killed or pivoted an AI feature and how he convinced stakeholders of the decision.
+11. How did you figure out whether an AI capability was actually solving a user problem versus being a solution looking for one? Walk me through a specific case.
+He explained how he determined whether an AI capability was solving a user problem rather than being a solution looking for one, using a specific case.

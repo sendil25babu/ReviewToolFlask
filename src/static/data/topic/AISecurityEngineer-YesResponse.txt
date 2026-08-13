@@ -1,0 +1,16 @@
+1. What's your threat model for an MCP or tool integration that lets an agent call internal APIs? Walk me through least privilege, the confused-deputy problem, and how you bound blast radius when the model decides which tool to call.
+He explained the threat model for MCP or tool integration, including least privilege, confused-deputy risks, and blast radius mitigation.
+2. We're about to promote a capability from human-in-the-loop to bounded-autonomous. What's your adversarial test plan, and what single finding makes you block the promotion outright?
+He discussed an adversarial test plan for promoting a capability to bounded-autonomous and the critical finding that would block the promotion.
+3. The provider silently updates the model behind your gateway. What breaks from a security standpoint, how would you detect a provider-introduced safety regression, and how do you secure the gateway and secrets so a compromise there isn't catastrophic?
+He explained security risks from provider model updates, detecting safety regressions, and securing gateways and secrets.
+4. An advisor copilot uses tools to read plan data and draft messages. Show me how an indirect prompt injection — say, text inside a retrieved document — could make it exfiltrate another participant's data, and the layered defenses you'd build. Why is input sanitization alone insufficient?
+He discussed indirect prompt injection risks, data exfiltration scenarios, layered defenses, and why input sanitization alone is insufficient.
+5. Red-team our "we never train on tenant data" and tenant-isolation guarantees. Give me a concrete path by which tenant A's data influences tenant B's outputs anyway — and how you'd detect it.
+He explained potential tenant isolation risks, cross-tenant data influence scenarios, and methods to detect them.
+6. Walk me through something you started that stalled out. What happened, and what did you do next?
+He discussed something he started that stalled, what caused it, and how he responded afterward.
+7. Describe a time you saw a problem forming before anyone else did. What did you do with that?
+He explained a situation where he identified a problem early and the actions he took to address it.
+8. Tell me about a time you held yourself to a standard higher than anyone was asking for. Why did that matter to you?
+He discussed a time he held himself to a higher standard and why it was important to him.

@@ -91,7 +91,10 @@ class TranscriptCleaner:
         return transcript
 
 
-def clean_transcript(input_file, output_file):
+def clean_transcript(input_file):
+
+    output_file = Path(input_file).with_name("cleaned_transcript.txt")
+
     cleaner = TranscriptCleaner()
 
     transcript = Path(input_file).read_text(encoding="utf-8")
@@ -104,9 +107,4 @@ def clean_transcript(input_file, output_file):
     print(f"Cleaned Length  : {len(cleaned):,}")
     print(f"Saved : {output_file}")
 
-
-if __name__ == "__main__":
-    clean_transcript(
-        "transcript.txt",
-        "transcript_clean.txt"
-    )
+    return output_file
