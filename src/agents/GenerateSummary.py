@@ -12,8 +12,8 @@ def generateInterviewSummary(summary_request):
         "incorrect_question_input", "")
     gender = summary_request.get("gender", "")
 
-    yes_file = DATA_PATH / f"{topicName}-YesResponse.txt"
-    no_file = DATA_PATH / f"{topicName}-NoResponse.txt"
+    yes_file = DATA_PATH / "topic" / f"{topicName}-YesResponse.txt"
+    no_file = DATA_PATH / "topic" / f"{topicName}-NoResponse.txt"
 
     incorrect_questions = set(
         int(x.strip())

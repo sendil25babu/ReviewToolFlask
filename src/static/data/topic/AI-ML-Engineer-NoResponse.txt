@@ -1,0 +1,12 @@
+1. Describe your experience building and deploying production AI systems. Include GenAI or LLM-based systems if applicable. What models, frameworks, and cloud services did you use, and how were these systems monitored and iterated on?
+He can better explain his experience building and deploying production AI systems, including specific models, frameworks, cloud services, monitoring, and iteration practices.
+2. Describe an AI or GenAI system you’ve worked on and explain its purpose and value as you would to a senior executive, focusing on the problem it solves, why it matters, and the impact it delivered.
+He can better explain an AI or GenAI system from a senior executive perspective, clearly connecting the business problem, purpose, value, and measurable impact.
+3. Describe a machine learning or GenAI approach you’ve used in a real system and explain how it works at a level appropriate for a technical peer.
+He can better explain a machine learning or GenAI approach used in a real system, including its technical design and how it works.
+4. Please walk us through an end-to-end analytics/AI exercise you've led or in which you've participated, framing (1) business problem, (2) action you took to solve the problem, and (3) result.
+He can better explain an end-to-end analytics or AI exercise by clearly connecting the business problem, actions taken, and resulting outcome.
+5. How much of your career has been spent on hands on coding? and How much of your time in your current role is spent on coding?
+He can better explain the extent of his hands-on coding experience throughout his career and the percentage of his current role dedicated to coding.
+6. What are some challenges you’ve faced while working with large language models or GenAI frameworks?
+He can better explain the challenges he has faced while working with large language models or GenAI frameworks and how those challenges affected the work.
