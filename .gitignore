@@ -18,6 +18,9 @@ lib64/
 parts/
 sdist/
 var/
+
+# Generated interview summaries
+src/static/data/summarys/
 wheels/
 *.egg-info/
 .installed.cfg

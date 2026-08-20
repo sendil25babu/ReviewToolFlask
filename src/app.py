@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, url_for
 from constants.topics import TOPICS
 from agents.GenerateSummary import generateInterviewSummary
 from agents.InterviewEvaluator import generate_review
@@ -49,9 +49,13 @@ def submit_form():
                 'incorrect_question_input': incorrect_question_input,
                 'gender': gender
             })
-            # Return success response
+            # Build an absolute URL under /static so the browser can download the file directly
+            download_url = url_for(
+                'static', filename=f'data/summarys/{interview_id}/{output_file.name}',
+                _external=True
+            ) if generate_summary else None
             return jsonify({
-                'results': str(output_file) if generate_summary else None,
+                'results': download_url,
             }), 200
         if analyze_transcript:
             transcript_summary = generate_review(data)
