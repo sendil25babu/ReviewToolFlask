@@ -3,6 +3,7 @@ Flask==3.0.0
 Werkzeug==3.0.0
 numpy
 requests
+python-docx
 
 # Note: TypeScript compilation requires Node.js and npm
 # Install globally: npm install -g typescript

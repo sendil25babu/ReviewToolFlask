@@ -99,7 +99,7 @@ function updateSubmissionStatus(statusElement, response, data) {
     }
 
     statusElement.className = 'status-message error';
-    statusElement.textContent = `Error: ${data.error || 'Unknown error occurred'}`;
+    statusElement.textContent = `Error: ${data.message || data.error || 'Unknown error occurred'}`;
 }
 /**
  * Handle form submission

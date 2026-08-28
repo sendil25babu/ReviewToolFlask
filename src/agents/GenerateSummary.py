@@ -56,7 +56,7 @@ def generateInterviewSummary(summary_request):
     output_file = output_dir / filename
 
     output_dir.mkdir(parents=True, exist_ok=True)
-
+    print(f"Creating summary file at: {output_file}")
     create_docx_file(output_file, final_summary)
 
     return output_file
