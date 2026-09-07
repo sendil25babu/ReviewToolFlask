@@ -1,0 +1,10 @@
+1.What are a few Agentic AI patterns for multi agent architecture for Financial services applications?
+He can better explain common multi-agent architecture patterns and how they apply to Financial Services applications.
+2.How can we orchestrate multiple Agentic AI solutions effectively?
+He can better explain how multiple Agentic AI solutions can be orchestrated, coordinated, and governed effectively.
+3.Please describe a story when you provided hands on experience on building an agentic platform
+He can better explain a specific hands-on experience building an agentic platform, including his role, architecture, and implementation.
+4.Please discus weaving security into Agentic architecture and future state
+He can better explain how security can be embedded into Agentic architecture and evolved as part of the future-state design.
+5.Please describe your experience on Fin-Ops and model governance areas
+He can better explain his experience with Fin-Ops and model governance, including how these practices support cost, risk, and model management.

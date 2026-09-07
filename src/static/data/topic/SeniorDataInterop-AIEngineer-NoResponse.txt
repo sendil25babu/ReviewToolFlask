@@ -1,0 +1,18 @@
+1. Describe how you'd implement a solution for the following story: As a developer you need a process that loads codesets in our database which support our apps and apis so that we can easily maintain and control the values. Some codesets are external (iso) and some codesets might require joins to other tables. Acceptance Criteria: - Must be runnable through a deployment pipeline - Must support some form of an approval process when values need to change. - Must be extendable as new cod
+He can better explain an extensible codeset-loading solution, including deployment pipeline integration, approval workflows, external ISO codesets, and codesets requiring database joins.
+2. You support a large, highly utilized API. The API has many connections to backend services including: a database, an identity provider, a cache server, and various cloud services (storage, message queue, etc.). Testing is highly scrutinized. Describe how you'd implement the test harness (i.e., patterns, best practices, rules in general, etc.).
+He can better explain a comprehensive API test harness covering backend integrations, testing patterns, best practices, isolation, reliability, and maintainability.
+3. You own a repository that is highly inner-sourced. Multiple developers from different teams want to contribute. Those developers all have different coding patterns and practices from their respective teams. Describe how you'd implement an AI-enabled harness that enables these developers to effectively develop in YOUR repository while adhering to YOUR coding practices, not theirs.
+He can better explain an AI-enabled development harness that enforces repository-specific coding practices while supporting contributors from different teams.
+4. You're the CEO/CIO of a tech company offering AI-enabled services. What's the message to your organization about ethical, cost-effective AI usage?
+He can better explain an organizational approach to ethical, responsible, and cost-effective AI usage, including expectations for employees and AI-enabled services.
+5. You have a data warehouse used by multiple applications (single page apps, ETL jobs, reporting engines, etc.). How do you control access to the data so users and applications only have access to the data they need? Describe the implementation.
+He can better explain a data-access implementation based on least privilege, application and user roles, authorization controls, and appropriate data-level access boundaries.
+6. Describe an example of a polymorphic implementation for a set of tables. Explain the advantages and disadvantages of using polymorphism in a database. When would you use polymorphism in general?
+He can better explain a polymorphic database implementation, including a concrete example, its advantages and disadvantages, and when polymorphism is appropriate.
+7. What are autonomous agents and how do they differ from LLM chains?
+He can better explain autonomous agents, including how their decision-making and execution differ from deterministic LLM chains.
+8. How do you prevent infinite loops in agents?
+He can better explain mechanisms for preventing infinite agent loops, including execution limits, termination conditions, and monitoring.
+9. What are security risks and ethical considerations in AI use?
+He can better explain key AI security risks and ethical considerations, including how they should be addressed in responsible AI usage.

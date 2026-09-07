@@ -1,0 +1,18 @@
+1. What types of services and/or accounts are typically aligned with Wealth Management?
+He explained the types of services and accounts typically aligned with Wealth Management.
+2. What is the difference between Advisor and Broker, and what are some typical interactions and/or services they provide to their clients?
+He discussed the difference between Advisor and Broker and their typical client interactions and services.
+3. Explain what Books and Records are and why they are necessary for a Broker Dealer.
+He explained Books and Records and why they are necessary for a Broker Dealer.
+4. What is a Suitability review?
+He explained what a Suitability review is and its role in Wealth Management.
+5. What is a Risk Tolerance Questionnaire and where might it be used?
+He explained what a Risk Tolerance Questionnaire is and where it might be used.
+6. What are some ways that brokerage accounts are typically funded?
+He discussed common ways brokerage accounts are typically funded.
+7. What is market data and where does it originate? Are there any challenges or considerations when dealing with market data?
+He explained market data, its origins, and the challenges or considerations involved in dealing with it.
+8. Please describe your expertise in architecting WM Data and consumption for the applications.
+He explained his experience architecting WM Data and consumption for applications.
+9. Please describe your AI architecture experience related to Wealth Management.
+He discussed his AI architecture experience related to Wealth Management.

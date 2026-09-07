@@ -1,0 +1,10 @@
+1. What are your experiences with AI for Digital and Data applications design and build?
+He can better explain his experience designing and building AI capabilities for Digital and Data applications, including his role and implementation approach
+2. What does the hybrid and ideal target state cloud architecture look like for Digital and applications?
+He can better explain the hybrid and ideal target-state cloud architecture for Digital applications, including key architectural components and considerations.
+3. What are the concepts of building a data product from Source systems to Digital applications?
+He can better explain the concepts and architecture involved in building a data product from source systems through to Digital applications.
+4. Please describe the data architecture, data domains, data integrations, and data consumption patterns in your recent AI designs?
+He can better explain the data architecture, domains, integrations, and consumption patterns incorporated into his recent AI designs.
+5. Please describe how you lead digital modernization efforts?
+He can better explain how he leads digital modernization efforts, including his approach to architecture, execution, stakeholder alignment, and transformation.

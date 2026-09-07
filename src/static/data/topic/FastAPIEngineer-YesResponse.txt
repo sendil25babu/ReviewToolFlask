@@ -1,0 +1,16 @@
+1. What is FastAPI, and how does it differ from other web frameworks?
+He explained what FastAPI is and how it differs from other web frameworks.
+2. What are the benefits of using FastAPI?
+He discussed the benefits of using FastAPI.
+3. How do you optimize FastAPI performance?
+He explained how to optimize FastAPI performance.
+4. How do you manage database sessions?
+He discussed how to manage database sessions.
+5. Describe how you'd implement a solution for the following story: As a developer you need a process that loads codesets in our database which support our apps and apis so that we can easily maintain and control the values. Some codesets are external (iso) and some codesets might require joins to other tables. Acceptance Criteria: - Must be runnable through a deployment pipeline   - Must support some form of an approval process when values need to change. - Must be extendable as new cod
+He explained how he would implement a codesets solution supporting deployment pipelines, approval processes, and extensibility.
+6. You support a large, highly utilized API.  The API has many connections to backend services including: a database, an identity provider, a cache server, and various cloud services (storage, message queue, etc.).  Testing is highly scrutinized.  Describe how you'd implement the test harness (i.e., patterns, best practices, rules in general, etc.).
+He discussed implementing a test harness for a highly utilized API, including patterns, best practices, and testing rules.
+7. What are some common Python performance bottlenecks in data processing scripts, and how do you mitigate them?
+He explained common Python performance bottlenecks in data processing scripts and how to mitigate them.
+8. How do you structure a Python data processing project for maintainability, reusability, and testability?
+He discussed structuring a Python data processing project for maintainability, reusability, and testability.
