@@ -1,0 +1,12 @@
+1. How many years of SAP experience do you have, and how much of that experience was focused on SAP Financials, General Ledger, and financial integrations?
+He can better explain his total SAP experience and specifically quantify his experience with SAP Financials, General Ledger, and financial integrations.
+2. This project is already in the requirements and design phase, so we need someone who can become productive very quickly. Can you tell me about a project where you joined later in the process and had to make an immediate contribution?
+He can better explain a specific project where he joined during requirements or design and quickly made a meaningful contribution.
+3. A loan transaction is successfully reaching SAP, but it posted to the incorrect GL account. How would you troubleshoot the issue to determine whether the root cause is the
+He can better explain a systematic troubleshooting approach to identify whether the incorrect GL posting originated in the source, middleware, or SAP configuration.
+4. An interface successfully sends 100,000 loan transactions to SAP, but GL is $2 million out of balance. How would you troubleshoot the problem?
+He can better explain how he would reconcile the 100,000 transactions, trace financial differences across systems, and isolate the root cause of the $2 million imbalance.
+5. Describe how you would test an end-to-end loan transaction from the source company through middleware and into the SAP General Ledger, including how you would validate the data and posting at each stage.
+He can better explain an end-to-end testing approach covering source data, middleware transformations, SAP processing, GL posting, reconciliation, and validation at each stage.
+6. Thank you for participating in this video interview. To wrap up this interview here is your final question. Once answered you can sign off. If you joined this program next Monday, what information would you want to gather during your first 48 hours, and what would you aim to accomplish within your first two weeks?
+He can better explain the information he would gather during his first 48 hours and the specific objectives he would target during his first two weeks.
