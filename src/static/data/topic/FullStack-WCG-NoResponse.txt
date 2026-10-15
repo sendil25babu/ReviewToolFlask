@@ -1,0 +1,12 @@
+1. Walk me through a full stack system that you've led the implementation of in the past
+He can better explain a full stack system he has led the implementation of.
+2. What is your approach to using AI for problem solving?
+He can better explain his approach to using AI for problem solving.
+3. Tell me about a time that you had to get buy-in from other teams on a solution.
+He can better explain a time he had to get buy-in from other teams on a solution.
+4. How do you approach a legacy or unfamiliar codebase when asked to explain how it works?
+He can better explain how he approaches a legacy or unfamiliar codebase and how it works.
+5. You've inherited a codebase you didn't write, and what if we ask you to explain how it works and then refactor part of it. How do you approach that, and how do you decide what to change and what to leave alone?
+He can better explain how he approaches an inherited codebase, how it works, and what to change and what to leave alone.
+6. What do you like and dislike about the current state of the tech world?
+He can better explain what he likes and dislikes about the current state of the tech world.

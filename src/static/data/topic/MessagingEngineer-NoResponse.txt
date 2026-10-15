@@ -1,0 +1,12 @@
+1. Tell me about the largest email environment you've managed. What was the scale, and what were your primary responsibilities?
+He can better explain the scale of the largest email environment he managed and his primary responsibilities across the email platform.
+2. You notice a sudden drop in onboarding email delivery and an increase in MFA-related support tickets. How would you investigate and resolve the issue?
+He can better explain a structured approach to investigating the delivery decline and MFA-related support increase, including root-cause analysis, remediation, and validation.
+3. Explain SPF, DKIM, and DMARC and how they impact email deliverability and security.
+He can better explain SPF, DKIM, and DMARC, including how each works and their impact on email authentication, deliverability, and security.
+4. Describe a time you had to recover from a domain reputation issue, blacklist event, or major deliverability incident. What actions did you take?
+He can better explain a specific domain reputation or deliverability incident, the actions taken to recover, and how the issue was resolved.
+5. Tell me about a recurring operational problem you identified and how you drove resolution across Product, Engineering, Infrastructure, Security, and Support teams.
+He can better explain a recurring operational problem he identified and how he coordinated Product, Engineering, Infrastructure, Security, and Support teams toward resolution.
+6. If you joined WCG tomorrow, what would be your first 90-day plan to improve email deliverability, monitoring, governance, and reporting across the enterprise?
+He can better explain a structured 90-day plan covering email deliverability, monitoring, governance, reporting, priorities, and measurable outcomes across the enterprise.

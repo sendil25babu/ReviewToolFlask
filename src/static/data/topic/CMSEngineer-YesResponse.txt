@@ -1,0 +1,12 @@
+1. How do you ensure that content is optimized for search engines and easily discoverable by users?
+He explained how he ensures content is optimized for search engines and easily discoverable by users.
+2. How do you keep up with the latest trends and updates in CMS technology and ensure that your organization uses the most effective tools?
+He discussed how he keeps up with the latest trends and updates in CMS technology and ensures his organization uses the most effective tools.
+3. What’s the process for planning and implementing a content migration to a new CMS platform?
+He explained the process for planning and implementing a content migration to a new CMS platform.
+4. How can a personalized CMS improve the user experience?
+He discussed how a personalized CMS can improve the user experience.
+5. How do you design an enterprise architecture that decouples content authoring (backend CMS) from multi-channel consumption (web, mobile app, IoT)? What are the trade-offs regarding latency, security, and developer velocity?
+He explained how he designs enterprise architecture to decouple content authoring from multi-channel consumption and addresses latency, security, and developer velocity trade-offs.
+6. How do you implement immutable content versioning (e.g., draft, review, scheduled publish, rollback) in the database without bloating storage or slowing down read queries?
+He discussed implementing immutable content versioning in the database while avoiding storage bloat and slow read queries.

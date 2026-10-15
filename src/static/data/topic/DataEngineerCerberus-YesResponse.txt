@@ -1,0 +1,24 @@
+1. How would you identify the top N most frequent elements in a large dataset? What data structures would you use, and how would it scale?
+He explained how he would identify the top N most frequent elements in a large dataset, including data structures and scalability.
+2. How would you detect and remove duplicates from a list of records efficiently? What are the time and space complexities of your approach?
+He discussed how he would detect and remove duplicates from a list of records efficiently, including time and space complexities.
+3. In Spark, how would you perform a join between two very large datasets, one of which fits in memory and the other doesn’t?
+He explained how he would perform a join between two very large datasets in Spark when one fits in memory and the other doesn’t.
+4. What are some common performance bottlenecks in PySpark jobs, and how do you resolve them?
+He discussed common performance bottlenecks in PySpark jobs and how he resolves them.
+5. Can you walk through how you would profile and optimize a long-running PySpark ETL job?
+He explained how he would profile and optimize a long-running PySpark ETL job.
+6. How do you structure PySpark code for reusability, testing, and maintainability in production environments?
+He discussed how he structures PySpark code for reusability, testing, and maintainability in production environments.
+7. How do you structure a production-grade DAG in Airflow? What are your best practices for reliability and modularity?
+He explained how he structures a production-grade DAG in Airflow, including best practices for reliability and modularity.
+8. How do you manage Airflow variables, secrets, and connections in MWAA?
+He discussed how he manages Airflow variables, secrets, and connections in MWAA.
+9. How do you monitor Airflow DAG runs and handle failure notifications in MWAA?
+He explained how he monitors Airflow DAG runs and handles failure notifications in MWAA.
+10. How do you write efficient SQL queries in Snowflake when working with large datasets?
+He discussed how he writes efficient SQL queries in Snowflake when working with large datasets.
+11. Explain your approach to managing Snowflake stages, file formats, and external tables.
+He explained his approach to managing Snowflake stages, file formats, and external tables.
+12. What are Snowflake Streams, and how do you use them for CDC (Change Data Capture) in a pipeline?
+He discussed Snowflake Streams and how he uses them for CDC (Change Data Capture) in a pipeline.

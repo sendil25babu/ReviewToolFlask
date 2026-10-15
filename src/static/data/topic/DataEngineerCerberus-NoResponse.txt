@@ -1,0 +1,24 @@
+1. How would you identify the top N most frequent elements in a large dataset? What data structures would you use, and how would it scale?
+He can better explain how to identify the top N most frequent elements in a large dataset, including the data structures used and how the approach would scale.
+2. How would you detect and remove duplicates from a list of records efficiently? What are the time and space complexities of your approach?
+He can better explain how to detect and remove duplicates from a list of records efficiently, including the time and space complexities of the approach.
+3. In Spark, how would you perform a join between two very large datasets, one of which fits in memory and the other doesn’t?
+He can better explain how to perform a join between two very large datasets in Spark when one fits in memory and the other doesn’t.
+4. What are some common performance bottlenecks in PySpark jobs, and how do you resolve them?
+He can better explain the common performance bottlenecks in PySpark jobs and how he would resolve them.
+5. Can you walk through how you would profile and optimize a long-running PySpark ETL job?
+He can better walk through how he would profile and optimize a long-running PySpark ETL job, including identifying the underlying performance issues.
+6. How do you structure PySpark code for reusability, testing, and maintainability in production environments?
+He can better explain how he structures PySpark code for reusability, testing, and maintainability in production environments.
+7. How do you structure a production-grade DAG in Airflow? What are your best practices for reliability and modularity?
+He can better explain how he structures a production-grade DAG in Airflow, including best practices for reliability and modularity.
+8. How do you manage Airflow variables, secrets, and connections in MWAA?
+He can better explain how he manages Airflow variables, secrets, and connections in MWAA, including the appropriate management approach for each.
+9. How do you monitor Airflow DAG runs and handle failure notifications in MWAA?
+He can better explain how he monitors Airflow DAG runs and handles failure notifications in MWAA.
+10. How do you write efficient SQL queries in Snowflake when working with large datasets?
+He can better explain how he writes efficient SQL queries in Snowflake when working with large datasets, including the key performance considerations.
+11. Explain your approach to managing Snowflake stages, file formats, and external tables.
+He can better explain his approach to managing Snowflake stages, file formats, and external tables, including how they are used together.
+12. What are Snowflake Streams, and how do you use them for CDC (Change Data Capture) in a pipeline?
+He can better explain Snowflake Streams and how he uses them for CDC (Change Data Capture) in a pipeline.

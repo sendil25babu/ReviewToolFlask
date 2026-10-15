@@ -1,0 +1,14 @@
+1. Describe a time you had to implement a complex IAM solution. What challenges did you face, and how did you overcome them?
+He can better explain a specific time he implemented a complex IAM solution, the challenges he faced, and how he overcame them.
+2. How do you stay up-to-date with the latest IAM trends and technologies?
+He can better explain how he stays up-to-date with the latest IAM trends and technologies, including the sources and practices he follows.
+3. How do you secure serverless functions using IAM?
+He can better explain how to secure serverless functions using IAM, including the IAM controls and access mechanisms involved.
+4. Explain IAM policy evaluation
+He can better explain IAM policy evaluation, including how policies are evaluated and how access decisions are determined.
+5. What are some popular Identity-Aware Proxy (IAP) providers?
+He can better explain some popular Identity-Aware Proxy (IAP) providers and the role they play in securing application access.
+6. Why is Identity and Access Management (IAM) essential in today's era?
+He can better explain why Identity and Access Management (IAM) is essential in today's era, particularly for controlling identity, authentication, authorization, and access.
+7. Tell us about an IAM challenge you've solved
+He can better explain a specific IAM challenge he has solved, including the problem, approach, and resolution.

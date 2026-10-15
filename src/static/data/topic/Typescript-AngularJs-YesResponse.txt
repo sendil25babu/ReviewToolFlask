@@ -1,0 +1,14 @@
+1. Please describe a software development project you completed successfully and your most significant contribution to it.
+He explained a software development project he completed successfully and his most significant contribution to it.
+2. Please elaborate about an app you built in Angular. Give examples of services, components and modules used.
+He discussed an app he built in Angular, including examples of services, components, and modules used.
+3. What is your experience developing apps for the cloud, and what makes developing for the cloud different from on-prem apps?
+He explained his experience developing apps for the cloud and what makes developing for the cloud different from on-prem apps.
+4. How do you assure software quality in the apps you've built or the code you've written? Please describe any role automated DevOps played in that.
+He discussed how he assures software quality in the apps he built or code he wrote and the role automated DevOps played.
+5. How do you resolve differences of opinion with your developer peers?
+He explained how he resolves differences of opinion with his developer peers.
+6. Please give an overview of your experience working with Python and the framework used (Flask/Django etc.)
+He discussed his experience working with Python and the framework used, including Flask or Django.
+7. How much of your career has been spent on hands on coding? and How much of your time in your current role is spent on coding?
+He explained how much of his career has been spent on hands-on coding and how much of his current role is spent on coding.
