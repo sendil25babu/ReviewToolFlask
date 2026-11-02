@@ -1,4 +1,5 @@
 from flask import Flask, render_template, jsonify, request, url_for
+from constants.paths import DATA_PATH
 from constants.topics import TOPICS
 from agents.GenerateSummary import generateInterviewSummary
 from agents.InterviewEvaluator import generate_review
@@ -17,6 +18,25 @@ def hello_world():
 def get_topics():
     """API endpoint to get available topics."""
     return jsonify({'topics': TOPICS})
+
+
+@app.route('/api/topic-responses')
+def get_topic_responses():
+    """Return response file contents for the selected topic."""
+    topic = request.args.get('topic', '').strip()
+    if not topic:
+        return jsonify({'message': 'Topic is required'}), 400
+
+    yes_file = DATA_PATH / 'topic' / f'{topic}-YesResponse.txt'
+    no_file = DATA_PATH / 'topic' / f'{topic}-NoResponse.txt'
+
+    if not yes_file.exists() or not no_file.exists():
+        return jsonify({'message': f'Response files not found for topic: {topic}'}), 404
+
+    return jsonify({
+        'yesResponse': yes_file.read_text(encoding='utf-8').strip(),
+        'noResponse': no_file.read_text(encoding='utf-8').strip(),
+    })
 
 
 @app.route('/submit', methods=['POST', 'OPTIONS'])

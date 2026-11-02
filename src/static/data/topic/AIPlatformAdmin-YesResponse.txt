@@ -1,0 +1,16 @@
+1. A user reports they accidentally uploaded a document containing sensitive data, such as claimant PHI or financial records, into a chat. What steps do you take as the platform administrator?
+He explained the steps he would take as a platform administrator when a user accidentally uploads sensitive data, such as claimant PHI or financial records, into a chat.
+2. If you were responsible for both ChatGPT Enterprise and Claude Enterprise, how would you keep governance consistent across two platforms with different admin consoles and feature sets?
+He discussed keeping governance consistent across ChatGPT Enterprise and Claude Enterprise despite differences in admin consoles and feature sets.
+3. A business unit asks to enable a new connector or integration, such as SharePoint, Google Drive, or a third-party MCP server. What is your process from request to enablement?
+He explained his process for enabling a new connector or integration, from the business request through approval and enablement.
+4. What workspace-level settings have you configured around data retention, data sharing, and model training, and how did you align them with company policy?
+He discussed configuring workspace-level settings for data retention, data sharing, and model training in alignment with company policy.
+5. How have you governed user-created assets such as custom GPTs, Claude Projects, shared prompts, or skills? What controls did you put in place?
+He explained how he governed user-created assets, including custom GPTs, Claude Projects, shared prompts, and skills, and the controls he implemented.
+6. What audit, logging, or compliance capabilities have you used on these platforms, and how did you get that data to Security or Compliance teams?
+He discussed the audit, logging, and compliance capabilities he used and how he shared the data with Security or Compliance teams.
+7. When the vendor releases a new feature, such as a new model, agent capability, or file creation tool, how do you decide whether to enable it and for whom?
+He explained how he evaluates new vendor features, such as models, agent capabilities, and file creation tools, before deciding whether to enable them and for whom.
+8. Tell me about a time an admin configuration change caused an unexpected problem for users. What happened, and what did you change in your process afterward?
+He described an admin configuration change that caused an unexpected problem for users and explained what he changed in his process afterward.

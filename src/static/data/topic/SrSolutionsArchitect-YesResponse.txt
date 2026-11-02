@@ -1,0 +1,10 @@
+1. Tell me three things that make you uniquely qualified for this position?
+He explained three things that make him uniquely qualified for the position.
+2. Tell me about an architecture pattern you've recently worked with that you found to be interesting or complex.
+He discussed an architecture pattern he recently worked with that he found interesting or complex.
+3. Describe your approach and thought processes regarding how you would solve for this requirement: "Adjudication must identify and make available on the claim record whether the discount was applied for member benefit or client benefit. The required claim-level information must be available for downstream consumption by Member Experience, Claims History, Reporting, and other authorized applications."
+He explained his approach to ensuring adjudication identifies whether a discount was applied for member benefit or client benefit and makes the claim-level information available to Member Experience, Claims History, Reporting, and other authorized applications.
+4. Tell me about a time you had to push harder for results than others you were working with. Describe your approach, rationale, how others reacted and the final result.
+He described a time he pushed harder for results than others, including his approach, rationale, others’ reactions, and the final result.
+5. Where do you see yourself in 3-5 years, and what are you passionate about that would influence this direction?
+He discussed where he sees himself in 3–5 years and the passions that would influence his career direction.

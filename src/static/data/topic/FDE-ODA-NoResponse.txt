@@ -1,0 +1,12 @@
+1. You inherit a mature enterprise data platform that works today but is largely database and ETL driven. How would you determine what should be modernized first, and how would you explain the value of moving capabilities toward Databricks and AWS to product and business stakeholders?
+He can better explain how he would prioritize modernization and communicate the business value of moving capabilities toward Databricks and AWS.
+2. As an FDE, you may enter an environment where the product team understands the business problem, but the modernization solution is not yet clear. How would you work with Product and Engineering to turn that ambiguity into an executable solution?
+He can better explain how he would work with Product and Engineering to turn an ambiguous modernization problem into an executable solution.
+3. If you helped build a new data capability with a product team, how would you ensure that the permanent engineering team can own, operate and continue evolving it after your engagement ends?
+He can better explain how he would enable the permanent engineering team to own, operate, and evolve the data capability after his engagement ends.
+4. Assume you have an existing enterprise data application built around Oracle tables and traditional ETL workflows in Informatica. Walk us through, at a high level, how you would modernize it using Databricks and AWS services. What would you migrate, what might you retain initially, and why?
+He can better explain how he would modernize Oracle and Informatica workflows using Databricks and AWS, including what to migrate and retain initially.
+5. A critical data pipeline currently takes 4 hours to make data available, but the business needs it closer to real time. How would you investigate the problem and determine whether the bottleneck is in ingestion, transformation, storage, compute or application access?
+He can better explain how he would investigate the four-hour data pipeline and identify bottlenecks across ingestion, transformation, storage, compute, and application access.
+6. You join our Operational Data Asset engineers and are asked to accelerate one difficult modernization use case using Databricks, Python and AWS. What would you aim to accomplish in your first few iterations, and how would you balance rapid delivery with production-grade engineering?
+He can better explain his first few iterations using Databricks, Python, and AWS, while balancing rapid delivery with production-grade engineering.

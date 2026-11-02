@@ -37,10 +37,10 @@ def generateInterviewSummary(summary_request):
 
     line1 = "The candidate is skilled in " if not topicName == 'ProductBuilder' else ""
     final_summary = (
-        f"Strengths: {line1}\n"
+        f"Strengths: "
         + strengths_paragraph
         + "\n"
-        + "Areas of Improvement/Weaknesses:\n"
+        + "Areas of Improvement/Weaknesses:"
         + improvements_paragraph
         + "\n"
         + "The candidate is good in the interview. "

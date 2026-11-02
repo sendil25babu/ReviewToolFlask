@@ -33,7 +33,50 @@ function initializeFormHandler() {
         updateImprovementQuestionState();
     }
 
+    const topicSelect = document.getElementById('topic');
+    if (topicSelect) {
+        topicSelect.addEventListener('change', loadSelectedTopicResponses);
+    }
+
     loadTopics();
+}
+
+async function loadSelectedTopicResponses() {
+    const topicSelect = document.getElementById('topic');
+    const responseView = document.getElementById('topic-response-view');
+    const yesResponseContent = document.getElementById('yes-response-content');
+    const noResponseContent = document.getElementById('no-response-content');
+
+    if (!topicSelect || !responseView || !yesResponseContent || !noResponseContent) {
+        return;
+    }
+
+    const selectedTopic = topicSelect.value;
+    if (!selectedTopic) {
+        responseView.classList.remove('visible');
+        yesResponseContent.textContent = '';
+        noResponseContent.textContent = '';
+        return;
+    }
+
+    try {
+        responseView.classList.add('visible');
+        yesResponseContent.textContent = 'Loading...';
+        noResponseContent.textContent = 'Loading...';
+
+        const response = await fetch(`/api/topic-responses?topic=${encodeURIComponent(selectedTopic)}`);
+        if (!response.ok) {
+            throw new Error(`Topic responses request failed: ${response.status}`);
+        }
+
+        const data = await response.json();
+        yesResponseContent.textContent = (data.yesResponse || '').trim() || 'No content available.';
+        noResponseContent.textContent = (data.noResponse || '').trim() || 'No content available.';
+    } catch (error) {
+        console.error('Error loading topic responses:', error);
+        yesResponseContent.textContent = 'Unable to load Yes response content.';
+        noResponseContent.textContent = 'Unable to load No response content.';
+    }
 }
 
 /**

@@ -27,7 +27,7 @@
             padding: 50px;
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            width: min(900px, 95vw);
+            width: min(80vw, 2000px);
         }
 
         h1 {
@@ -79,6 +79,46 @@
             margin-top: 30px;
             text-align: left;
             width: 100%;
+        }
+
+        .topic-response-view {
+            display: none;
+            margin-top: 30px;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 24px;
+        }
+
+        .topic-response-view.visible {
+            display: block;
+        }
+
+        .response-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .response-column {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .response-column h3 {
+            margin-bottom: 12px;
+            color: #1f2937;
+            font-size: 1.1em;
+        }
+
+        .response-column pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-break: break-word;
+            color: #374151;
+            line-height: 1.6;
+            font-family: inherit;
+            font-size: 0.95em;
         }
 
         .form-columns {
@@ -195,6 +235,7 @@
         <div id="form-status" class="status-message" aria-live="polite"></div>
 
         <form class="form-container">
+            <button type="submit" style="margin-bottom: 24px;">Submit</button>
             <div class="form-columns">
                 <div class="form-column">
                     <div class="form-group">
@@ -248,7 +289,19 @@
                 </div>
             </div>
 
-            <button type="submit" style="margin-top: 24px;">Submit</button>
+            <div id="topic-response-view" class="topic-response-view">
+                <div class="response-grid">
+                    <div class="response-column">
+                        <h3>Yes Response</h3>
+                        <pre id="yes-response-content">Loading...</pre>
+                    </div>
+                    <div class="response-column">
+                        <h3>No Response</h3>
+                        <pre id="no-response-content">Loading...</pre>
+                    </div>
+                </div>
+            </div>
+
             <div id="form-status" class="status-message" aria-live="polite"></div>
         </form>
     </div>
