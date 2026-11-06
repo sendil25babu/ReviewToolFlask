@@ -130,14 +130,22 @@ function updateSubmissionStatus(statusElement, response, data) {
     if (response.ok) {
         statusElement.className = 'status-message success';
         const resultPath = data.results || '';
-        const fileName = resultPath.split(/[\\/]/).pop() || resultPath;
-        const link = document.createElement('a');
-        link.href = resultPath;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.textContent = fileName || 'Open file';
-        statusElement.innerHTML = 'File saved: ';
-        statusElement.appendChild(link);
+        if (/^[A-Za-z]:[\\/]/.test(resultPath)) {
+            // Physical folder path on the server machine: show "FilePath: <interviewId>" as a file:// link
+            statusElement.textContent = 'FilePath: ';
+            const folderName = resultPath.split(/[\\/]/).filter(Boolean).pop() || resultPath;
+            const link = document.createElement('a');
+            link.href = 'file:///' + resultPath.replace(/\\/g, '/');
+            link.textContent = folderName;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            statusElement.appendChild(link);
+        } else if (resultPath) {
+            // Non-path result (e.g. transcript summary text)
+            statusElement.textContent = resultPath;
+        } else {
+            statusElement.textContent = 'Form submitted successfully.';
+        }
         return;
     }
 

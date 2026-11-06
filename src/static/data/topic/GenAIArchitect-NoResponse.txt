@@ -1,0 +1,24 @@
+1. What are Pandas Libraries in Python?
+He can better explain what Pandas libraries are in Python and their key uses.
+2. What are Python decorators, and how can they be used in a GenAI pipeline
+He can better explain Python decorators and how they can be used in a GenAI pipeline.
+3. What is the difference between a fine-tuned model and a pre-trained model in GenAI?
+He can better explain the difference between fine-tuned and pre-trained models in GenAI.
+4. How do you approach the task of building embeddings for textual data?
+He can better explain his approach to building embeddings for textual data.
+5. Which types of evaluation do perform to verify how accurate is an LLM response
+He can better explain the types of evaluation used to verify the accuracy of an LLM response.
+6. What is LangChain, and how is it useful for building LLM applications?
+He can better explain what LangChain is and how it helps in building LLM applications.
+7. Can you explain the concept of tools in LangChain and how they can be used within agents?
+He can better explain the concept of tools in LangChain and how agents use them.
+8. How do you ensure data privacy and security while working with large language models?
+He can better explain how he ensures data privacy and security while working with large language models.
+9. How would you design an architecture for a GenAI-powered content generation platform?
+He can better explain how he would design an architecture for a GenAI-powered content generation platform.
+10. What are some challenges you’ve faced while working with large language models or GenAI frameworks?
+He can better explain the challenges he has faced while working with large language models or GenAI frameworks.
+11. How have you understand the core concepts of what LLMs do?
+He can better explain his understanding of the core concepts behind how LLMs work.
+12. Which techniques to do you use to keep up with the rapid changes in technology around GenAI
+He can better explain the techniques he uses to keep up with rapid changes in GenAI technology.

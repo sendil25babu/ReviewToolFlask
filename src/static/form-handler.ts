@@ -15,6 +15,7 @@ interface FormData {
 interface ApiResponse {
   message: string;
   data?: FormData;
+  results?: string | null;
 }
 
 interface TopicsResponse {
@@ -151,6 +152,27 @@ async function handleFormSubmit(e: Event): Promise<void> {
     if (response.ok) {
       alert(`Success!\nInterview ID: ${interviewId}\nTopic: ${topic}\nSkip Transcript: ${skipTranscript}\nGenerate Summary: ${generateSummary}\nAnalyze Transcript: ${analyzeTranscript}`);
       console.log('Server response:', data);
+
+      const statusElements = document.querySelectorAll('#form-status');
+      const resultPath = data.results || '';
+      const isFsPath = /^[A-Za-z]:[\\/]/.test(resultPath);
+      statusElements.forEach((el) => {
+        el.textContent = '';
+        if (isFsPath) {
+          // Physical folder path: show "FilePath: <interviewId>" as a file:// link
+          el.append('FilePath: ');
+          const folderName = resultPath.split(/[\\/]/).filter(Boolean).pop() || resultPath;
+          const link = document.createElement('a');
+          link.href = 'file:///' + resultPath.replace(/\\/g, '/');
+          link.textContent = folderName;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          el.appendChild(link);
+        } else {
+          el.textContent = resultPath || 'Form submitted successfully.';
+        }
+        el.className = 'status-message success';
+      });
 
       // Reset form
       const form = document.querySelector('form') as HTMLFormElement;
